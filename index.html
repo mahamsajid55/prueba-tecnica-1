@@ -4,24 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba Tecnica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<!--    landing page on digital books-->
 <body>
-    <nav class="poner-borde">
+    <nav class="ponerBorde">
     <ul>
-    <li class="menu"><a href="#">Home</a></li>
+    <li class="menu"><a href="#Home">Home</a></li>
+    <li class="menu"><a href="#About">About</a></li>
+    <li class="menu"><a href="#Books">Books</a></li>
+    <li class="menu"><a href="#contact">Contact</a></li>
+    <li class="menu"><a href="register.html">Register</a></li>
+
+    <div class="hamburger-menu" onclick="toggleMenu()"><i>☰</i></div>
     </ul>
 </nav>
 
  <header>
-    <div class="">
-    <img src="#" alt="logo"
+    <div id="Home">
+        <div class="container">
+         <img src="#" alt="logo">
 
-    <div class="">
-    <div class="">
+
+    <div class="titulo">
+        <div class="cont-img"><img src="imagenes/home-page.jpg" alt="title"></div>
+        <h1>Welcome to Our Page</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus non, tempore modi eligendi magni, ad quis ex illo dolores quam cumque a est facere vero tenetur temporibus dolore eius hic? Repellat optio alias laborum aliquid dolorem. Odio tempore eos cupiditate laudantium iusto aperiam obcaecati ab a nobis veniam praesentium voluptates excepturi consequuntur illum magni qui inventore aspernatur omnis reprehenderit vel, voluptate dignissimos, autem repellat possimus? Distinctio cumque eaque, quisquam doloremque consectetur quaerat, cupiditate possimus ad dicta nulla velit in dolore. Facilis veritatis odit deleniti sed facere fugiat quo ab vel architecto quis, amet dolores maxime reiciendis aut doloremque reprehenderit impedit.</p>
 </div>
 </div>
 </div>
- </header>
+</header>
+<!--about section-->
+
+
+<div id="About">
+<div class="container-back">
+    <div class="container-2">
+
+<div class="titulo-about">
+    <div class="cont-img-2"><img src="imagenes/about.png" alt="title"></div>
+    <h1>About us</h1>
+    <p>A multi-lingual, multi-market, multi-platform audiobook and eBook content discovery platform, here to help you find your next big read.
+
+        You can read and listen to over 100,000 free audiobooks and eBooks online or download to your mobile phone, desktop, and eReader for later.
+        
+        Our platform not only looks hard for free digital books from great sources such as Librivox, Gutenberg, Google Books, and Open Library, but also includes results from Amazon and Apple Books to give you the best choice.</p>
     
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!--books section-->
+<div id="Books">
+<div class="titulo">
+    <h1>Glose makes reading more exiciting for everyone</h1>
+    <p>personalize your setting follow your progress archive your hughlights and notes automatically</p>
+
+    <div class="flex-container">
+    <img src="imagenes/book-1.png" class="book" alt="book">
+    <img src="imagenes/book-2.png" class="book" alt="book">
+    <img src="imagenes/book-3.png" class="book" alt="book">
+    <img src="imagenes/book-4.png" class="book" alt="book">
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="titulo">
+    <h1>Top Trending Books</h1>
+    <p>personalize your setting follow your progress archive your hughlights and notes automatically</p>
+
+    <div class="flex-container">
+        <img src="imagenes/book-5.png" class="book" alt="book">
+        <img src="imagenes/book-6.png" class="book" alt="book">
+        <img src="imagenes/book-7.png" class="book" alt="book">
+        <img src="imagenes/book-8.png" class="book" alt="book">
+    
+    </div>
+</div>
+</div>
+
+
+
+<!--contact form-->
+<div id="contact">
+    <div class="contact-section">
+   <h1>Contact Form</h1>
+   <div class="contact-container">
+     <form action="index.html" method="get">
+        <label for="name">First Name</label>
+        <input type="text" id="name" name="firstname" placeholder="Your name">
+
+        <label for="name">Last Name</label>
+        <input type="text" id="name" name="firstname" placeholder="Last name">
+
+        <label for="name">gender</label>
+        <input type="text" id="gender" name="gender" placeholder="Your gender">
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="write something" style="height: 200px;"></textarea>
+
+        <div class="checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+             <label for="terms">Accept Terms and Conditions</label>
+        </div>
+        <input type="submit" value="submit">
+     </form>
+   </div>
+</div>
+</div>
+</div>
 </body>
 </html>
