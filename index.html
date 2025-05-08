@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba Tecnica</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="discover free ebooks. Explore trending digital books, personalize you reading, and enjoy easy access to over 10,000 titles">
+
 </head>
-<!--    landing page on digital books-->
 <body>
     <nav class="ponerBorde">
     <ul>
@@ -14,20 +15,20 @@
     <li class="menu"><a href="#About">About</a></li>
     <li class="menu"><a href="#Books">Books</a></li>
     <li class="menu"><a href="#contact">Contact</a></li>
-    <li class="menu"><a href="register.html">Register</a></li>
+    <li class="menu" id="auth-link"><a href="register.html">register</a></li>
 
     <div class="hamburger-menu" onclick="toggleMenu()"><i>☰</i></div>
     </ul>
 </nav>
 
  <header>
+    
+    <p id="day"></p>
+ 
     <div id="Home">
         <div class="container">
-         <img src="#" alt="logo">
-
-
     <div class="titulo">
-        <div class="cont-img"><img src="imagenes/home-page.jpg" alt="title"></div>
+        <div class="cont-img-1"><img src="imagenes/home-page.jpg" alt="title"></div>
         <h1>Welcome to Our Page</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus non, tempore modi eligendi magni, ad quis ex illo dolores quam cumque a est facere vero tenetur temporibus dolore eius hic? Repellat optio alias laborum aliquid dolorem. Odio tempore eos cupiditate laudantium iusto aperiam obcaecati ab a nobis veniam praesentium voluptates excepturi consequuntur illum magni qui inventore aspernatur omnis reprehenderit vel, voluptate dignissimos, autem repellat possimus? Distinctio cumque eaque, quisquam doloremque consectetur quaerat, cupiditate possimus ad dicta nulla velit in dolore. Facilis veritatis odit deleniti sed facere fugiat quo ab vel architecto quis, amet dolores maxime reiciendis aut doloremque reprehenderit impedit.</p>
 </div>
@@ -36,21 +37,24 @@
 </header>
 <!--about section-->
 
-
 <div id="About">
 <div class="container-back">
     <div class="container-2">
 
 <div class="titulo-about">
-    <div class="cont-img-2"><img src="imagenes/about.png" alt="title"></div>
-    <h1>About us</h1>
+    <div class="cont-img">
+        <img id="imagen" src="imagenes/about.png" alt="" />
+        <button id="btn1">CAMBIAR</button>
+    </div>
+
+           <h1>About us</h1>
     <p>A multi-lingual, multi-market, multi-platform audiobook and eBook content discovery platform, here to help you find your next big read.
 
         You can read and listen to over 100,000 free audiobooks and eBooks online or download to your mobile phone, desktop, and eReader for later.
         
         Our platform not only looks hard for free digital books from great sources such as Librivox, Gutenberg, Google Books, and Open Library, but also includes results from Amazon and Apple Books to give you the best choice.</p>
-    
-</div>
+    </div>
+
 </div>
 </div>
 </div>
@@ -117,5 +121,9 @@
 </div>
 </div>
 </div>
+
+<script src="script--2.js"></script>
+
+
 </body>
 </html>
