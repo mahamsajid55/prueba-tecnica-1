@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         a{
+          background-color: palevioletred;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          display: inline;
+         cursor: pointer;
+         text-align: center;
+          border-radius: 10px;
+          font-weight: bold;
+    }
+
+    #registerForm{
+         width: 500px;
+         padding: 25px;
+         box-sizing: border-box;
+         text-align: center;
+         margin-left: 40rem;
+         background-color: lightpink;
+         border-radius: 10px;
+         margin-top: 5rem;
+    }
+    button{
+        background-color: palevioletred;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        border: orchid;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    input{
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    </style>
+</head>
+<body>
+    <form id="registerForm">
+        <h2>Register</h2>
+        <input type="text" placeholder="Name" required id="name" />
+        <input type="text" placeholder="Username" required id="username" />
+        <input type="password" placeholder="password" required id="password" />
+        <input type="password" placeholder="confirm password" required id="confirm password" />
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">Accept Terms and Conditions</label><br><br>
+
+        <button type="submit">Register</button>
+        &nbsp; <a href="login.html">Go to Login</a>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

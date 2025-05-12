@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+     
+    #loginform{
+         width: 500px;
+         padding: 25px;
+         box-sizing: border-box;
+         text-align: center;
+         margin-left: 40rem;
+         background-color: lightpink;
+         border-radius: 10px;
+         margin-top: 5rem;
+    }
+    button{
+        background-color: palevioletred;
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        border: orchid;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    input{
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    a{
+    background-color: palevioletred;
+    color: white;
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+    display: inline;
+    text-align: center;
+    border-radius: 10px;
+    }
+    .password-container{
+        position: relative;
+    }
+   .password-toggle{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+   }
+
+    </style>
+</head>
+<body>
+    <form id="loginform" action="index.html" method="get">
+        <h2>Login</h2>
+        <input type="text" placeholder="username" required id="username"/>
+        <div class="password-container">
+            <input type="password" placeholder="password" required id="password"/>
+            <img src="imagenes/bx-low-vision(1).svg" alt="eye" class="password-toggle">
+        </div>
+        <button type="submit">Login</button>
+        <a href="register.html">Go to Register</a>
+        <a href="index.html">Home</a>    
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
